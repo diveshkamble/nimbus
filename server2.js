@@ -11,16 +11,16 @@ var Routeboxer = require('geojson.lib.routeboxer');
 var boxer = new Routeboxer();
 var port = process.env.PORT || 4000;
 var gmaps = require('@google/maps').createClient({
-  key: 'AIzaSyBhtjS5p6oGfU3Tcm5wiwe7tzmoXvuoLvw'
+  key: ''
 });
 
 //MySQL Connector
 var conn = mysql.createConnection({
-	host : 'sql12.freesqldatabase.com',
-	user : 'sql12243764',
-	password : 'StKgq3cu7Z',
-  database : 'sql12243764',
-  port:'3306'
+	host : '',
+	user : '',
+	password : '',
+  database : '',
+  port:''
 });
 
 conn.connect(function(err) {
