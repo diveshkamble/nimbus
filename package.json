@@ -1,0 +1,36 @@
+{
+  "name": "Nimbus",
+  "version": "1.0.0",
+  "description": "Web based app to find restaurants",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Divesh Kamble",
+  "license": "ISC",
+  "dependencies": {
+    "@google/maps": "^0.4.6",
+    "animate.css": "^3.6.1",
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "firebase": "^4.11.0",
+    "firebase-admin": "^5.11.0",
+    "geojson.lib.routeboxer": "0.0.6",
+    "googlemapsutil": "^0.1.7",
+    "mongodb": "^3.0.10",
+    "morgan": "^1.9.0",
+    "mysql": "^2.15.0",
+    "nodemon": "^1.17.5",
+    "path": "^0.12.7",
+    "polyline": "^0.2.0",
+    "pug": "^2.0.0-rc.4",
+    "pusher": "^2.0.0",
+    "request": "^2.87.0",
+    "socket.io": "^2.0.4"
+  },
+  "engines": {
+    "node": "8.9.4"
+  }
+}

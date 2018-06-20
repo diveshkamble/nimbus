@@ -1,0 +1,108 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(http-equiv='content-type', content='text/html;charset=UTF-8')
+    title Nimbus
+    meta(name='description', content='Nimbus theme')
+    link(href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i', rel='stylesheet')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css', integrity='sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb', crossorigin='anonymous')
+    link(href='/css/bootstrap.min.css', rel='stylesheet')
+    link(href='/css/landingpage.css', rel='stylesheet')
+    link(href='/css/font-awesome.min.css', rel='stylesheet')
+    script(src='https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js')
+    script.
+      WebFont.load({
+      google: {
+      families: ['Ranga', 'Julius Sans One', 'Montserrat']
+      }
+      });
+  style.
+    #head-container{
+    text-align: center;
+    }
+    #main-body{
+    text-align: center;
+    }
+    #signin-button{
+    float: right;
+    }
+    #carimage{
+    height: 30px;
+    width: 30px;
+    }
+    .card{
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    }
+    .input-group:focus{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
+    .input-group{
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    }
+    .input-group:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
+    .links{
+    margin-top: 8%;
+    }
+    .links ul{
+    list-style:none;
+    }
+    .links ul li{
+    margin-bottom: 5%;
+    }
+  body
+    nav#navbar-style-dark.navbar.navbar-expand-lg.fixed-top.navbar-dark
+      a.navbar-brand.p-0(href='/', target='_blank')
+        span NIMBUS
+    #hero-04.bg-secondary(style="background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)),url('/img/food.jpg') center right; background-size: cover;")
+      .container.d-flex.flex-column(style='height:105vh;')
+        .row.my-auto
+          .col-lg-5.col-md-8.col-sm-12.mx-auto
+            .card.px-1.py-4.border-0
+              .card-block.text-center.py-5
+                h1.display-9.mb-3.font-weight-normal(style="font-family: 'Montserrat', sans-serif;") Enter Source and Destination
+                .col-lg-10(style='margin:auto;')
+                  .input-group
+                    span#basic-addon1.input-group-addon Source:
+                    input#start.form-control(type='text', value='Bandra Station, Bairam Naupada, Bandra West, Mumbai, Maharashtra, India')
+                    button#location-button.btn(type='button')
+                      i#location-arrow.fas.fa-location-arrow
+                br
+                .col-lg-10(style='margin:auto;')
+                  .input-group
+                    span#basic-addon1.input-group-addon Destination:
+                    input#end.form-control(type='text', value='Rizvi College Of Engineering, Rizvi Complex, Pali Hill, Mumbai, Maharashtra, India')
+                br
+                a#submit.btn.btn-primary(data-scroll='', href='#RestaurantList', type='button', style='margin:auto;')
+                  | Lets Go!
+                  img#carimage(src='/icons/si-glyph-car.svg')
+                br
+                br
+                br
+        
+    hr.m-0.p-0
+    #RestaurantList
+    .container
+          #map(style='display: none; margin: auto')
+          br
+    script(src='/javascripts/jquery-3.3.1.min.js')
+    script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBhtjS5p6oGfU3Tcm5wiwe7tzmoXvuoLvw&callback=initMap&libraries=places,visualization', async='', defer='')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/esm/popper.js')
+    link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.0.13/css/all.css", integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp", crossorigin="anonymous")
+    script(src='/javascripts/bootstrap.min.js')
+    script(src='/javascripts/nimbus.js')
+    script(src='/javascripts/smooth-scroll.js')
+    script(src='/javascripts/process.js')
+    script(src='/javascripts/RouteBoxer.js')
+    script(src='/javascripts/pace.js')
+    link(rel="stylesheet", href="/css/pace.css")
+    script.
+      var scroll = new SmoothScroll('a[href*="#"]',{
+      speed:1000
+      });
